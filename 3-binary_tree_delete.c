@@ -8,13 +8,13 @@
  */
 void binary_tree_delete(binary_tree_t *tree)
 {
-    /* tree is null */
-    if (!tree)
-        return;
+	/* tree is null */
+	if (!tree)
+		return;
 
-    /* recursively free each right/left child node */
-    binary_tree_delete(tree->right);
-    binary_tree_delete(tree->left);
-    free(tree);
-    tree = NULL;
+	/* recursively free each right/left child node */
+	binary_tree_delete(tree->right);
+	binary_tree_delete(tree->left);
+	free(tree);
+	tree = NULL;
 }
