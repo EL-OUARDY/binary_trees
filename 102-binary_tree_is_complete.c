@@ -28,7 +28,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
  */
 int bt_is_complete_helper(const binary_tree_t *tree, int index, int size)
 {
-	// Check if the tree is complete
+	/* Check if the tree is complete */
 	if (tree == NULL)
 		return (1);
 
