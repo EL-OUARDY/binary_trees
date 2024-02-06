@@ -35,7 +35,8 @@ int bt_is_complete_helper(const binary_tree_t *tree, int index, int size)
 	if (index >= size)
 		return (0);
 
-	return (bt_is_complete_helper(tree->left, 2 * index + 1, size) && bt_is_complete_helper(tree->right, 2 * index + 2, size));
+	return (bt_is_complete_helper(tree->left, 2 * index + 1, size) &&
+			bt_is_complete_helper(tree->right, 2 * index + 2, size));
 }
 
 /**
